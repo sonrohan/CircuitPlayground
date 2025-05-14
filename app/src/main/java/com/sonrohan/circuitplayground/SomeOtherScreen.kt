@@ -57,6 +57,9 @@ class SomeOtherPresenter(
         val points by remember {
             mutableIntStateOf(12334)
         }
+
+        println("ROHAN DEBUG PRESENTER RUN!")
+
         return SomeOtherPage.State(
             numberOfPoints = points,
             eventSink = { event ->
